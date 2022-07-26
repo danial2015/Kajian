@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+
+import SearchBar from './app/components/SearchBar'
+import Screen from './app/components/Screen';
+import BlockCard from './app/components/BlockCard';
+import FeaturedUst from './app/components/FeaturedUst';
+import SmallCard from './app/components/SmallCard';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+       <Screen>
+        <SearchBar />
+        <FeaturedUst />
+        <SmallCard />
+        </Screen>
+       
+    );
+  }
