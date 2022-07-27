@@ -6,15 +6,16 @@ import Title from './Title';
 import Subtitle from './Subtitle';
 
 // create a component
-const BlockCard = ({style,imageStyle}) => {
+const BlockCard = ({style,imageStyle,item}) => {
+    const {thumbnail,title,desc} = item;
     return (
-        <View style={[styles.container,style]}>
-            <Image source={require('../../assets/uas.jpg')} style={[styles.image,imageStyle]}/>
+        <View style={[styles.container, style]}>
+        <Image source={{ uri: thumbnail }} style={[styles.image, imageStyle]} />
         <View style={styles.contentContainer}>
-            <Title>UAS</Title>
-            <Subtitle>Ustadz Abdul Somad</Subtitle>
+          <Title>{title}</Title>
+          <Subtitle>{desc}</Subtitle>
         </View>
-        </View>
+      </View>
     );
 };
 

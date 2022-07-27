@@ -1,13 +1,13 @@
 //import liraries
 import React from 'react';
-import { View, StyleSheet,StatusBar } from 'react-native';
+import { View, StyleSheet,StatusBar,ScrollView } from 'react-native';
 
 // create a component
 const Screen = ({children}) => {
     return (
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
             {children}
-        </View>
+        </ScrollView>
     );
 };
 

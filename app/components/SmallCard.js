@@ -6,8 +6,8 @@ import BlockCard from './BlockCard';
 // create a component
   const {width} = Dimensions.get('window');
 
-const SmallCard = () => {
-    return <BlockCard style={styles.container} imageStyle={styles.image}/>
+const SmallCard = ({item}) => {
+    return <BlockCard item={item} style={styles.container} imageStyle={styles.image}/>
     
 }
 
