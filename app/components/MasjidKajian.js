@@ -6,7 +6,7 @@ import HorizontalList from './HorizontalList';
 // create a component
 const MasjidKajian = ({data}) => {
     return (
-        <HorizontalList title="Mesjid" data={data}/>
+        <HorizontalList title="Masjid" data={data}/>
     );
 };
 

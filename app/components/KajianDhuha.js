@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 import VerticalList from './VerticalList';
 
 // create a component
-const KajianMasjid = ({data}) => {
+const KajianDhuha = ({data}) => {
     return (
-        <VerticalList title="Kajian" data={data}/>
+        <VerticalList title="Kajian Hari" data={data}/>
     );
 };
 
 
 //make this component available to the app
-export default KajianMasjid;
+export default KajianDhuha;

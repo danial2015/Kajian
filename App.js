@@ -4,9 +4,9 @@ import SearchBar from './app/components/SearchBar'
 import Screen from './app/components/Screen';
 import FeaturedUst from './app/components/FeaturedUst';
 import UstTop from './app/components/UstTop';
-import KajianMasjid from './app/components/KajianMasjid'
+import KajianDhuha from './app/components/KajianDhuha'
 import MasjidKajian from './app/components/MasjidKajian';
-import JadwalKajian from './app/components/JadwalKajian';
+import KajianMaghrib from './app/components/KajianMaghrib';
 
 import data from './DataKajian'
 
@@ -14,8 +14,8 @@ export default function App() {
 
   const dataKajian = data.filter(item => item.category === 'breaking-news');
   const masjidKaj = data.filter(item => item.category === 'tech');
-  const kajianMas = data.filter(item => item.category === 'political');
-  const waktuKajian = data.filter(item => item.category === 'entertainment');
+  const kajianDhuha = data.filter(item => item.category === 'political');
+  const kajianMaghrib = data.filter(item => item.category === 'entertainment');
 
   
   return (
@@ -30,9 +30,9 @@ export default function App() {
         }}
         />
         <UstTop data={dataKajian} />
-        <KajianMasjid data={kajianMas} />
+        <KajianDhuha data={kajianDhuha} />
         <MasjidKajian data={masjidKaj} />
-        <JadwalKajian data={waktuKajian} />
+        <KajianMaghrib data={kajianMaghrib} />
         </Screen>
        
     );
